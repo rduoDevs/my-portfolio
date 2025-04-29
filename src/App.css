@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(180deg, #1a273b, #080f18); /* Gradient from dark grey/black to a slightly lighter shade */
-  color: #f3f3f3; /* Light/white text */
+  background: linear-gradient(180deg, #472109, #140905); 
+  color: #f3f3f3;
 }
 
 #root {
@@ -47,10 +47,40 @@ body {
 }
 
 .profile-pic {
-/*  width: 2vw;  /* 20% of the viewport width */
- /* height: 2vw; */
+  width: 30vh; 
+  height: 30vh; 
   max-width: 200px;
   max-height: 200px;
   object-fit: cover;
   border-radius: 50%;
 }
+
+.profile-pic-border {
+  width: 30.5vh;  
+  height: 30.5vh; 
+  max-width: 205px;
+  max-height: 205px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carrot {
+  width: 0.1vh;
+  object-fit: cover;
+  color:#5b88cb;
+}
+
+
+/*
+.navbar-nav .nav-item .nav-link:hover {
+  color: #080f18;
+  background-color: white;
+  border-radius: 30px;
+  padding-block: 0.05rem;
+  padding-inline: 0.5rem;
+  transition: "color 0.3s";
+  transition: "background-color 0.3s";
+  transition: "padding-block 0.3s";
+  transition: "padding-inline 0.3s";
+}
+  */

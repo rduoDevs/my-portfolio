@@ -13,13 +13,13 @@ export const configs = {
       value: 150
     },
     color: {
-      value: "#24324f"
+      value: "#a75a27"
     },
     links: {
       enable: true,
       distance: 120,
       color: {
-        value: "#24324f"
+        value: "#733912"
       }
     },
     shape: {
