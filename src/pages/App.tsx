@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import '../App.css'
 import { loadParticles } from '../components/ParticleBackground'
 import {configs} from '../components/ParticleBackground'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './home.tsx'
 import About from './about.tsx'
 import Experience from './experience.tsx'
