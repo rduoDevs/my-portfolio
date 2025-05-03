@@ -96,6 +96,7 @@ function Experience() {
                             width={300}
                             height={50}
                         ></Placard>
+                        {/*}
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>teaching</h2>
                         <Placard
                             header="Teaching Assistant"
@@ -103,7 +104,7 @@ function Experience() {
                             description={["CSCI0190: Accelerated Intro to CS", "May 2025 - Present"]}
                             width={300}
                             height={50}
-                        ></Placard>
+                        ></Placard>*/}
                     </div>
                 </div>
         </>
