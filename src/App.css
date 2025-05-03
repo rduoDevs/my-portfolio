@@ -1,5 +1,8 @@
 body {
-  background: linear-gradient(180deg, #472109, #140905); 
+  background: linear-gradient(180deg, #472109, #140905);
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
   color: #f3f3f3;
 }
 
@@ -23,27 +26,13 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
-  color: #ffffff;
+  color: #e57b4e;
 }
 
 .profile-pic {
@@ -70,17 +59,12 @@ body {
   color:#5b88cb;
 }
 
-
-/*
-.navbar-nav .nav-item .nav-link:hover {
-  color: #080f18;
-  background-color: white;
-  border-radius: 30px;
-  padding-block: 0.05rem;
-  padding-inline: 0.5rem;
-  transition: "color 0.3s";
-  transition: "background-color 0.3s";
-  transition: "padding-block 0.3s";
-  transition: "padding-inline 0.3s";
+.rounded {
+  border-radius: 0.4rem;
+  box-shadow: 0 0px 30px #b84611;
 }
-  */
+
+.rounded-card {
+  border-radius: 0.4rem;
+  box-shadow: 0 0px 50px hsl(13, 82%, 31%);
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 interface NavbarProps {
@@ -45,19 +46,19 @@ export function Navbar({navItems}: NavbarProps) {
                             }}
                             onClick={() => seti(index)}
                         >
-                            <a
+                            <Link
                                 className={`nav-link ${i === index ? "active" : ""}`}
-                                href={`#${item}`}
+                                to={item === "home" ? "/" : `/${item}`}
                                 style={{
                                     color: "#ff986b",
-                                    transition: "color .5s",
+                                    transition: "color .25s",
                                     fontSize: "1rem",
                                 }}
                                 onMouseEnter={(e) => (e.currentTarget.style.color = "#a75a27")}
                                 onMouseLeave={(e) => (e.currentTarget.style.color = "#ff986b")}
                             >
                                 {item}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
