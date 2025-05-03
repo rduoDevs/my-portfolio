@@ -1,9 +1,5 @@
-import { useState, useEffect } from 'react';
 import '../App.css';
-import { loadParticles } from '../components/ParticleBackground'
-import {configs} from '../components/ParticleBackground'
 import { Navbar } from '../components/Navbar';
-import { Card } from '../components/Card';
 import { Carousel } from '../components/Carousel';
 
 const projectImgs: string[] = [
@@ -39,6 +35,7 @@ const projectStack: string[] = [
     "C · C++ · Makefile · Git · Docker",
 ];
 
+{/*
 const projectLinks: string[] = [
 
 ];
@@ -54,12 +51,12 @@ const projectAwards: {[key: number]: string[]} = [
     [],
     []
 ];
+*/}
 
 
 
 function Projects() {
     let tabs = ["home", "about", "experience", "projects", "games"]
-    const[state, setState] = useState(1);
    
 
     return (

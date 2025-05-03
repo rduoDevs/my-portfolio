@@ -1,10 +1,7 @@
 import { useEffect } from 'react'
-import ryanLogo from '../assets/RyanWarm.png'
-import whiteCircle from '../assets/WhiteCircle.png'
 import '../App.css'
 import { loadParticles } from '../components/ParticleBackground'
 import {configs} from '../components/ParticleBackground'
-import { Navbar } from '../components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './home.tsx'
 import About from './about.tsx'

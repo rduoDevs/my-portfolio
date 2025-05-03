@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
-import { loadParticles } from '../components/ParticleBackground'
-import {configs} from '../components/ParticleBackground'
 import { Navbar } from '../components/Navbar';
 import { Placard } from '../components/Placard';
 
