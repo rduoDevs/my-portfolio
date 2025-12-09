@@ -20,7 +20,7 @@ export function Placard(items: placardInfo) {
                     display: "flex", alignItems: "center", position: "relative",
                     marginTop: "-3vh"}}>{items.header}</h4>
                 {items.description.map((str, _) => (
-                    <p style={{display: "flex", alignItems: "left", fontSize: "0.75rem", marginBottom: "-2.3vh"}}>
+                    <p style={{display: "flex", alignItems: "left", fontSize: "12px", marginBottom: "-16px"}}>
                         {str}
                     </p>
                 ))}

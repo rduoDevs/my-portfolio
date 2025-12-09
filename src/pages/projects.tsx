@@ -61,76 +61,25 @@ function Projects() {
 
     return (
         <>
-        <div style={{position: "relative", top: "0vh"}}>
+         <div style={{zIndex: 1, position: "absolute", top: "2.5vh", left: "50%", transform: "translateX(-50%)", width: "50%"}}>
             <Navbar
                 navItems={tabs}>
             </Navbar>
-            <div style={{zIndex: 0, marginTop: "-7vh" }}>
+        </div>
+
+           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "-12vh", position: "relative"}}>
                 <h1>projects</h1>
             </div>
-        </div>
 
 
             
-                <div style={{ marginTop: "0vw" }}>
+                <div style={{ display: "flex", marginTop: "-3.5vh", justifyContent: "center"}}>
                     <Carousel
                         images={projectImgs}
                         descs={projectDescs}
                         headers={projectHeaders}
                         techStack={projectStack}
                     />
-
-{/*}
-                    <div style={{ marginLeft: "3vw" }}>
-                        
-                        <Card
-                            header="bridge"
-                            img="bridgeCard.png"
-                            description={["AI-powered medical translator.", "February 2025"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                        <Card
-                            header="CameraService"
-                            img="CameraServiceCard.png"
-                            description={["Open-sourced Roblox camera enhancer.", "August 2022 - Present"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                        
-                        <Card
-                            header="Neohex"
-                            img="NeohexCard.png"
-                            description={["iCode · Manchester, CT", "August 2024"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                        <Card
-                            header="ClockIn!"
-                            img="ClockInCard.png"
-                            description={["Wellness-based scheduling app.", "April 2023"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                        
-                        <Card
-                            header="Fluid Images"
-                            img="FluidImagesCard.png"
-                            description={["Smart image cropping w/seam-carving", "November 2024"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                         
-                        <Card
-                            header="CS300 Systems Projects"
-                            img="cs300Card.png"
-                            description={["Alias: Lugical · Remote", "May 2025"]}
-                            width={500}
-                            height={250}>
-                        </Card>
-                       
-                       
-                    </div> */}
                 </div>
         </>
     )}

@@ -13,36 +13,37 @@ export function Navbar({navItems}: NavbarProps) {
         <nav>
             {/* Navbar sandwich button */}
 
-    
-            {/* Tabs on the Navbar */}
-            <div style={{ 
-                position: "relative", 
-                display: "flex", 
-                justifyContent: "flex-end", 
-                left: "0", 
-                bottom: "2vh", 
-                zIndex: 4, 
-                flexWrap: "wrap", 
-                padding: "10px" 
-            }}>
+                
+                        {/* Tabs on the Navbar */}
+                        <div style={{ 
+                            position: "relative", 
+                            display: "flex", 
+                            justifyContent: "flex-end", 
+                            left: "0", 
+                            bottom: "2vh", 
+                            zIndex: 4, 
+                            flexWrap: "nowrap", /* Ensure items stay on one row */
+                            padding: "10px" 
+                        }}>
 
-                <ul className="navbar-nav" style={{ 
-                    display: "flex", 
-                    listStyle: "none", 
-                    padding: 0, 
-                    flexDirection: "row", 
-                    flexWrap: "wrap", 
-                    justifyContent: "center", 
-                    width: "100%" 
-                }}>
+                            <ul className="navbar-nav" style={{ 
+                                display: "flex", 
+                                listStyle: "none", 
+                                padding: 0, 
+                                flexDirection: "row", 
+                                flexWrap: "nowrap", /* Ensure items stay on one row */
+                                justifyContent: "center", 
+                                width: "100%" 
+                            }}>
                     {navItems.map((item, index) => (
                         <li
                             key={index}
                             className="nav-item"
                             style={{ 
-                                margin: "5px 10px", 
+                                margin: "0px 6px", 
                                 cursor: "pointer", 
-                                textAlign: "center" 
+                                textAlign: "center", 
+                                animation: (navItems.length == 4) ? "fadeIn2 4s" : "",
                             }}
                             onClick={() => seti(index)}
                         >

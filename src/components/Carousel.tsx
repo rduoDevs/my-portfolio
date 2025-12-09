@@ -18,8 +18,8 @@ const CarouselStyles: { [key: string]: React.CSSProperties} = {
         zIndex: 3,
     },
     imageContainer: {
-        width: "50%",
-        height: "100%",
+        width: (window.innerWidth < 600) ? "60%" : "35%",
+        height: "auto",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -27,10 +27,10 @@ const CarouselStyles: { [key: string]: React.CSSProperties} = {
         boxShadow: "0 0px 30px hsl(13, 81.80%, 23.70%)",
     },
     textContainer: {
-        animation: "fadeIn .5s",
+        animation: "fadeIn 1s",
     },
     button: {
-        animation: "fadeIn .5s",
+        animation: "fadeIn 1s",
         backgroundColor: "transparent",
         border: "none",
         color: "#ffffff",
@@ -43,26 +43,10 @@ const CarouselStyles: { [key: string]: React.CSSProperties} = {
     }
 };
 
-const fadeIn = `
-@keyframes fadeIn {
-    from {
-        opacity: 0.01;
-    }
-    to {
-        opacity: 1;
-    }
-}
-`;
-
-if (typeof document !== "undefined") {
-    const style = document.createElement("style");
-    style.textContent = fadeIn;
-    document.head.appendChild(style);
-}
 
 
 export function Carousel({ images, descs, headers, techStack }: CarouselProps) {
-    const [index, setIndex] = useState(1);
+    const [index, setIndex] = useState(0);
     
     const goBack = () => {
         setIndex((prevIndex) => 
@@ -88,7 +72,7 @@ export function Carousel({ images, descs, headers, techStack }: CarouselProps) {
                     if (imgElement) {
                         imgElement.style.animation = "none";
                         void imgElement.offsetWidth; // Trigger reflow
-                        imgElement.style.animation = "fadeIn .5s";
+                        imgElement.style.animation = "fadeIn 1s";
                     }
                 }}
                 style={CarouselStyles.button}
@@ -97,12 +81,10 @@ export function Carousel({ images, descs, headers, techStack }: CarouselProps) {
             </button>
             <img
                 src={imgSrc}
-                style={{
-                    maxWidth: "35%",
-                    maxHeight: "20%",
-                    animation: "fadeIn .5s",
-                    ...CarouselStyles.imageContainer,
-                }}
+                style={
+                    
+                    CarouselStyles.imageContainer
+                }
             />
 
             <button
@@ -114,7 +96,7 @@ export function Carousel({ images, descs, headers, techStack }: CarouselProps) {
                     if (imgElement) {
                         imgElement.style.animation = "none";
                         void imgElement.offsetWidth; // Trigger reflow
-                        imgElement.style.animation = "fadeIn .5s";
+                        imgElement.style.animation = "fadeIn 1s";
                     }
                 }}
                 style={CarouselStyles.button}
@@ -130,11 +112,10 @@ export function Carousel({ images, descs, headers, techStack }: CarouselProps) {
             marginRight: "15%", 
             textAlign: "center", 
             marginBottom: "-4vh",
-            animation: "fadeIn .5s"
         }}>
-            <h2 style={{marginBottom: "-.8vh", animation: "fadeIn .5s"}}>{headers[index]}</h2>
-            <i style={{fontSize: ".8em", marginBottom: "8vh", animation: "fadeIn .5s"}}>{techStack[index]}</i>
-            <p style={{marginTop: "0.8vh", animation: "fadeIn .5s"}}>{descs[index]}</p>
+            <h2 style={{marginBottom: "-.8vh"}}>{headers[index]}</h2>
+            <i style={{fontSize: ".8em", marginBottom: "8vh"}}>{techStack[index]}</i>
+            <p style={{marginTop: "0.8vh"}}>{descs[index]}</p>
         </div>
         </div>
         </>

@@ -10,7 +10,7 @@ export async function loadParticles(options: any) {
 export const configs = {
   particles: {
     number: {
-      value: 150
+      value: (window.innerWidth * screen.height) / 8500
     },
     color: {
       value: "#a75a27"

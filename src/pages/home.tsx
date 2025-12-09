@@ -10,21 +10,21 @@ function Home() {
   return (
     <>
         {/* Positioning for picture of myself */}
-        <div style={{ position: "absolute", zIndex: 3, top: "45%", left: "50%", transform: "translate(-50%, -78%)" }}>
+        <div style={{ animation: "fadeIn 1.35s", position: "absolute", zIndex: 3, top: "45%", left: "50%", transform: "translate(-50%, -78%)" }}>
           <img src={ryanLogo} className="profile-pic" alt="Pic of Ryan" />
         </div>
 
-        <div style={{ position: "absolute", zIndex: 2, top: "45%", left: "50%", transform: "translate(-50%, -77.4%)" }}>
+        <div style={{ animation: "fadeIn 1.35s", position: "absolute", zIndex: 2, top: "45%", left: "50%", transform: "translate(-50%, -77.4%)" }}>
             <img src={whiteCircle} className="profile-pic-border" />
         </div>
 
         {/* Layout for the headline text */}
-        <div style={{position: "relative", zIndex: 2}}>
+        <div style={{position: "relative", animation: "fadeIn2 4s", zIndex: 2}}>
         <h1 style={{ marginBottom: "1px", marginTop: "45vh" }}>Ryan Duong</h1>
-        <text>
+        <text style={{}}>
           {'indie game dev · cs + applied math @ brown'}
         </text>
-        <Navbar
+        <Navbar 
             navItems={tabs} />
        
         {/* Bottom placard */}

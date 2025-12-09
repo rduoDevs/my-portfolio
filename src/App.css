@@ -4,6 +4,8 @@ body {
   min-width: 100vw;
   margin: 0;
   color: #f3f3f3;
+  padding: env(safe-area-inset);
+  box-sizing: border-box;
 }
 
 #root {
@@ -68,3 +70,23 @@ body {
   border-radius: 0.4rem;
   box-shadow: 0 0px 50px hsl(13, 82%, 31%);
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

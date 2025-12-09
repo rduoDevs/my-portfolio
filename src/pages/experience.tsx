@@ -19,13 +19,14 @@ function Experience() {
 
     return (
         <>
-        <div style={{position: "relative", top: "0vh"}}>
+          <div style={{zIndex: 1, position: "absolute", top: "2.5vh", left: "50%", transform: "translateX(-50%)", width: "50%"}}>
             <Navbar
                 navItems={tabs}>
             </Navbar>
-            <div style={{zIndex: 0, marginTop: "-7vh"}}>
+        </div>
+
+           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "2vh" }}>
                 <h1>experience</h1>
-            </div>
             </div>
             
 
@@ -34,27 +35,28 @@ function Experience() {
                         display: "flex",
                         flexDirection: isMobile ? "column" : "row",
                         justifyContent: "center",
-                        marginTop: "5vh",
+                        marginTop: "-3.5vh",
                     }}
                 >
                     <div style={{ marginLeft: isMobile ? "0vw" : "3vw" }}>
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>work</h2>
                         <Placard
-                            header="Incoming SWE Intern"
+                            header="Incoming Research Assistant"
+                            img="BVC2.jpg"
+                            description={["Brown IVL · Providence, RI", "December 2025 - Present"]}
+                            width={300}
+                            height={50}
+                        ></Placard>
+                        
+                        <Placard
+                            header="Software Engineer Intern"
                             img="HyAxiom.png"
-                            description={["HyAxiom · South Windsor, CT", "June 2025 - Present"]}
+                            description={["HyAxiom · East Hartford, CT", "June 2025 - August 2025"]}
                             width={300}
                             height={50}
                         ></Placard>
 
                         
-                        <Placard
-                            header="Software Engineer"
-                            img="vastro.png"
-                            description={["VASTRO (startup) · Providence, RI", "April 2025 - Present"]}
-                            width={300}
-                            height={50}
-                        ></Placard>
                         <Placard
                             header="Technical Instructor"
                             img="iCode.png"
@@ -76,7 +78,7 @@ function Experience() {
                         <Placard
                             header="Director of Tech & Operations"
                             img="busun.png"
-                            description={["Brown University Simulation of the UN"]}
+                            description={["Brown Model UN"]}
                             width={300}
                             height={50}
                         ></Placard>
@@ -90,19 +92,27 @@ function Experience() {
                         <Placard
                             header="Community Feedback Program"
                             img="roblox.png"
-                            description={["Roblox Developer Relations"]}
+                            description={["Roblox Developer Relations", "2023 - 2025"]}
                             width={300}
                             height={50}
                         ></Placard>
-                        {/*}
+                        
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>teaching</h2>
                         <Placard
-                            header="Teaching Assistant"
-                            img="Brown.png"
-                            description={["CSCI0190: Accelerated Intro to CS", "May 2025 - Present"]}
+                            header="Computer Architecture"
+                            img="comparch.png"
+                            description={["CSCI1952Y: UTA", "December 2025 - May 2026"]}
                             width={300}
                             height={50}
-                        ></Placard>*/}
+                        ></Placard>
+                        <Placard
+                            header="Accelerated Intro to CS"
+                            img="dsa.png"
+                            description={["CSCI0190: UTA-STA", "June 2025 - December 2025"]}
+                            width={300}
+                            height={50}
+                        ></Placard>
+                        
                     </div>
                 </div>
         </>
