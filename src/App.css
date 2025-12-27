@@ -1,11 +1,12 @@
 body {
-  background: linear-gradient(180deg, #472109, #140905);
+  background: linear-gradient(180deg, #1b0a04, #000);
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
   color: #f3f3f3;
   padding: env(safe-area-inset);
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #root {
@@ -38,21 +39,10 @@ body {
 }
 
 .profile-pic {
-  width: 30vh; 
-  height: 30vh; 
-  max-width: 200px;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.profile-pic-border {
-  width: 30.5vh;  
-  height: 30.5vh; 
-  max-width: 205px;
-  max-height: 205px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 100%; 
+  object-fit:contain;
+  margin: auto;
+  border-radius: 2%;
 }
 
 .carrot {

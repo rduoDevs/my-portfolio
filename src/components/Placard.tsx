@@ -18,9 +18,11 @@ export function Placard(items: placardInfo) {
             <div >
                 <h4 style={{marginBottom: "-2.2vh", 
                     display: "flex", alignItems: "center", position: "relative",
-                    marginTop: "-3vh"}}>{items.header}</h4>
+                    marginTop: "-3vh"}}>
+                    {items.header}
+                </h4>
                 {items.description.map((str, _) => (
-                    <p style={{display: "flex", alignItems: "left", fontSize: "12px", marginBottom: "-16px"}}>
+                    <p style={{display: "flex", alignItems: "left", fontSize: "14px", lineHeight: 1.2, marginBottom: "-16px"}}>
                         {str}
                     </p>
                 ))}

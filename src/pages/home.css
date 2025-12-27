@@ -1,0 +1,65 @@
+.namebox {
+    max-height: inherit;
+    max-width: 200px;
+    width: 50%;
+    box-sizing: border-box;
+    animation: "fadeIn2 4s";
+    text-align: left;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    z-index: 2;
+}
+
+.mainbox {
+    z-index: 2;
+    width: 95%;
+    height: 80%;
+    margin-left: 2.5%;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact {
+    background: none;
+    margin-right: 15px;
+    border: none;
+    padding: 0;
+    position: relative;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+    outline: none;
+}
+.contact:hover {
+    background: none;
+    transform: translateY(-3px);
+    transition: transform 0.25s ease;
+    border: none;
+}
+
+.contact:focus, :focus-visible {
+    outline: none;
+}
+
+.textbox {
+    width: inherit;
+    max-height: inherit;
+    text-align: center;
+    z-index: 2;
+}
+
+.homehead {
+    font-size: 5em;
+    line-height: 0.8;
+}
+
+.homebody {
+    font-size: 20px;
+}

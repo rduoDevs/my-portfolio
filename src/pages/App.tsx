@@ -4,10 +4,6 @@ import { loadParticles } from '../components/ParticleBackground'
 import {configs} from '../components/ParticleBackground'
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './home.tsx'
-import About from './about.tsx'
-import Experience from './experience.tsx'
-import Projects from './projects.tsx'
-import Games from './games.tsx'
 
 function App() {
   useEffect(() => {
@@ -19,10 +15,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/games" element={<Games />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/experience" element={<Home />} />
+          <Route path="/projects" element={<Home />} />
+          <Route path="/games" element={<Home />} />
         </Routes>
       </Router>
     </>

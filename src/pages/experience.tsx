@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
-import { Navbar } from '../components/Navbar';
 import { Placard } from '../components/Placard';
 
 function Experience() {
-    let tabs = ["home", "about", "experience", "projects", "games"]
+    
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     useEffect(() => {
         const handleResize = () => {
@@ -19,14 +18,10 @@ function Experience() {
 
     return (
         <>
-          <div style={{zIndex: 1, position: "absolute", top: "2.5vh", left: "50%", transform: "translateX(-50%)", width: "50%"}}>
-            <Navbar
-                navItems={tabs}>
-            </Navbar>
-        </div>
 
-           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "2vh" }}>
+           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "20vh", marginBottom: "5vh"}} className="title">
                 <h1>experience</h1>
+                
             </div>
             
 
@@ -44,16 +39,16 @@ function Experience() {
                             header="Incoming Research Assistant"
                             img="BVC2.jpg"
                             description={["Brown IVL · Providence, RI", "December 2025 - Present"]}
-                            width={300}
-                            height={50}
+                            width={330}
+                            height={55}
                         ></Placard>
                         
                         <Placard
                             header="Software Engineer Intern"
                             img="HyAxiom.png"
                             description={["HyAxiom · East Hartford, CT", "June 2025 - August 2025"]}
-                            width={300}
-                            height={50}
+                            width={330}
+                            height={55}
                         ></Placard>
 
                         
@@ -61,56 +56,56 @@ function Experience() {
                             header="Technical Instructor"
                             img="iCode.png"
                             description={["iCode · Manchester, CT", "August 2023 - June 2024"]}
-                            width={300}
-                            height={50}
+                            width={330}
+                            height={55}
                         ></Placard>
 
                         <Placard
                             header="Indie Game Developer"
                             img="Lugical.png"
                             description={["Alias: Lugical · Remote", "August 2017 - Present"]}
-                            width={300}
-                            height={50}
+                            width={330}
+                            height={55}
                         ></Placard>
                     </div>
                     <div style={{ marginLeft: isMobile ? "0vw" : "0vw" }}>
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh"  }}>extracurriculars</h2>
                         <Placard
-                            header="Director of Tech & Operations"
+                            header="Secretary-General"
                             img="busun.png"
-                            description={["Brown Model UN"]}
-                            width={300}
-                            height={50}
+                            description={["Brown Model United Nations"]}
+                            width={330}
+                            height={55}
                         ></Placard>
                         <Placard
                             header="Attitude Control Engineer"
                             img="BSE.png"
                             description={["Brown Space Engineering"]}
-                            width={300}
-                            height={50}
+                            width={330}
+                            height={55}
                         ></Placard>
                         <Placard
                             header="Community Feedback Program"
                             img="roblox.png"
-                            description={["Roblox Developer Relations", "2023 - 2025"]}
-                            width={300}
-                            height={50}
+                            description={["Roblox Developer Relations"]}
+                            width={330}
+                            height={55}
                         ></Placard>
                         
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>teaching</h2>
                         <Placard
                             header="Computer Architecture"
                             img="comparch.png"
-                            description={["CSCI1952Y: UTA", "December 2025 - May 2026"]}
-                            width={300}
-                            height={50}
+                            description={["CSCI1952Y: UTA", "Spring 2026 @ Brown"]}
+                            width={330}
+                            height={55}
                         ></Placard>
                         <Placard
                             header="Accelerated Intro to CS"
                             img="dsa.png"
-                            description={["CSCI0190: UTA-STA", "June 2025 - December 2025"]}
-                            width={300}
-                            height={50}
+                            description={["CSCI0190: UTA-STA", "Fall 2025 @ Brown"]}
+                            width={330}
+                            height={55}
                         ></Placard>
                         
                     </div>

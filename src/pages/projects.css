@@ -1,0 +1,21 @@
+.projectcard {
+    max-width: 80%;
+    width: 600px;
+    background-color: rgb(255, 247, 238);
+    z-index: 2;
+    position: relative;   
+    border-radius: 0.4rem;
+    padding: 1vh; 
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-self: center;
+    box-shadow: 0 0px 20px #b84611;
+}
+
+.projectdetails {
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

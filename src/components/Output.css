@@ -1,0 +1,36 @@
+.outputButton {
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.outputButton:hover {
+    background: none;
+    transform: translateY(6px);
+    transition: transform 0.5s ease;
+    border: none;
+}
+
+
+.outputButton:active {
+    transform: none;
+    border:none;
+}
+.outputButton:focus, :focus-visible {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.outputText {
+    font-size: 12px;
+    color: #473a34;
+    margin-bottom: 3px;
+}

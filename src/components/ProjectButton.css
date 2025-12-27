@@ -1,0 +1,30 @@
+.ProjectButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Code {
+    background-color: rgb(122, 165, 244);
+}
+
+.Read {
+    background-color: rgb(248, 168, 107);
+}
+
+.buttonText {
+    font-size: 13px;
+    color: white;
+    line-height: 1;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
