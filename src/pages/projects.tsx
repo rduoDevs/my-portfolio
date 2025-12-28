@@ -28,22 +28,22 @@ function Projects() {
         <>
         
 
-           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "20vh", marginBottom: "5vh", position: "relative"}}>
+           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginLeft: 'auto', marginRight: 'auto', marginTop: "20vh", marginBottom: "5vh", position: "relative"}}>
                 <h1>projects</h1>
                 
             </div>
 
             <div className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                 <h2 style={{marginBottom: "-7px"}}>DEXTER</h2>
                 <i style={{fontSize: 14}}>TypeScript · MentraOS · NumPy · PyTorch · Supabase · Railway</i>
                 
                 
                 <p>
                     High-fidelity <b>3D environmental reconstruction</b> software. Feeds image scans from <b>voice-activated</b> camera capture on smart glasses into fine-tuned VGGT & Segment Anything <b>neural networks</b>.
-                    <h4 style={{marginBottom: "-10px"}}>🏆 2nd Place @ HackMIT 2025 (Mentra Challenge)</h4>
+                    <h4 style={{marginBottom: "-10px"}}>🏆 HackMIT 2025 2nd Place Winner (Mentra Challenge)</h4>
                 </p>
-                </text>
+                </span>
                 <div className='projectdetails'>
                     <ProjectButton label='Read more' url='https://plume.hackmit.org/project/ugfun-gvyux-bbxmw-kdmvi'/>
                     <ProjectButton label='Code' url='https://github.com/Timothy2105/dexter/'/>
@@ -53,13 +53,13 @@ function Projects() {
             </div>
 
             <div  className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                 <h2 style={{marginBottom: "-7px"}}>CameraService</h2>
                 <i style={{fontSize: 14}}>Lua · Rojo</i>
                 <p>
                     The most popular <b>open-sourced</b> library for customizable, smooth camera motion not natively supported in Roblox video games. Trusted by <b>800+ developers</b> across GitHub & Roblox Marketplace.
                 </p>
-                </text>
+                </span>
                 <div className='projectdetails'>
                     <ProjectButton label='Demo' url='https://devforum.roblox.com/t/cameraservice-a-new-camera-for-a-new-roblox/1988655'/>
                     <ProjectButton label='Code' url='https://github.com/rduoDevs/CameraService'/>
@@ -68,13 +68,13 @@ function Projects() {
             </div>
 
             <div  className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                 <h2 style={{marginBottom: "-7px"}}>Crystals</h2>
                 <i style={{fontSize: 14}}>C++ · GLM</i>
                 <p>
                     CPU-based <b>pathtracing</b> pipeline built on <b>spectral rendering</b>, combined with volume raymarching, object-bounded volumetrics, area lighting, and procedural scene generation for renders.
                 </p>
-                </text>
+                </span>
                 <div className='projectdetails'>
                     <ProjectButton label='Demo' url='https://www.youtube.com/watch?v=lgO3lt5_VoU'/>
                     <ProjectButton label='Code' url='https://github.com/JHeflinger/Crystals'/>
@@ -83,13 +83,13 @@ function Projects() {
             </div>
 
         <div  className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                 <h2 style={{marginBottom: "-7px"}}>BRIDGE</h2>
                 <i style={{fontSize: 14}}>Next.js · Python · Flask · REST API · Mistral</i>
                 <p>
                     An <b>AI-powered</b>, patient-first medical scribe translating patient concerns into clinically-structured, LaTeX-formatted reports. The middleman to alleviate nerves, and <b>mitigate medical bias.</b>
                 </p>
-                </text>
+                </span>
                 <div className='projectdetails'>
                     <ProjectButton label='Read more' url='https://devpost.com/software/better-real-interactions-for-diagnosis-general-evaluation'/>
                     <ProjectButton label='Code' url='https://github.com/ypragyan/bridge'/>
@@ -97,37 +97,37 @@ function Projects() {
             </div>
 
             <div  className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                 <h2 style={{marginBottom: "-7px"}}>Ray++</h2>
                 <i style={{fontSize: 14}}>C++ · GLM · Qt</i>
                 <p>
                     My toy <b>raytracer</b> written from scratch in C++. Features include multithreading, volume rendering, soft shadows, reflections, antialiasing, mipmap filters, UV textures, & more.
                 </p>
-                </text>
+                </span>
                 <Output imgs={[ray1, ray2, ray3, ray6, ray4, ray5]} vids={[]}></Output>
             </div>
 
             
 
             <div className='projectcard'>
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                     <h2 style={{marginBottom: "-7px"}}>WeensyOS</h2>
                     <i style={{fontSize: 14}}>C++ · QEMU · Docker</i>
                     <p>
                         OS kernel programming emulating <b>3MB of virtual memory</b> on top of 2MB of physical memory, with <b>process isolation</b>, shared read-only memory access, alongside <b>custom syscalls</b> for fork() & exit().
                     </p>
-                </text>
+                </span>
                 <Output imgs={[]} vids={[weensy]}></Output>
             </div>
 
             <div className="projectcard">
-                <text style={{color: "black"}}>
+                <span style={{color: "black"}}>
                     <h2 style={{marginBottom: "-7px"}}>Command Line Snake</h2>
                     <i style={{fontSize: 14}}>C · Makefile</i>
                     <p>
                         Your favorite game to time-waste in class, now on the <b>terminal</b>.
                     </p>
-                </text>
+                </span>
                 <Output imgs={[]} vids={[snake]}></Output>
             </div>
 

@@ -19,7 +19,7 @@ function Experience() {
     return (
         <>
 
-           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginTop: "20vh", marginBottom: "5vh"}} className="title">
+           <div style={{animation: "fadeIn2 1s", zIndex: 0, marginLeft: 'auto', marginRight: 'auto', marginTop: "20vh", marginBottom: "5vh"}} className="title">
                 <h1>experience</h1>
                 
             </div>

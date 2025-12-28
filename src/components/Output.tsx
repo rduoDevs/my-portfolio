@@ -16,7 +16,7 @@ export function Output(items: OutputInfo) {
                 <button className='outputButton' 
                 onClick={() => setIsVisible(!visible)}
                 >
-                    <text className='outputText'>{!visible ? "See Results" : "Hide Results"}</text>
+                    <span className='outputText'>{!visible ? "See Results" : "Hide Results"}</span>
                     <img style={{height: 15, marginTop: -5}} src={caret}></img>
                 </button>
 
@@ -27,6 +27,7 @@ export function Output(items: OutputInfo) {
               key={`vid-${i}`}
               controls
               playsInline
+              preload="metadata"
               style={{ width: "98%", marginTop: 10, borderRadius: 8 }}
             >
               <source src={src} type="video/mp4" />

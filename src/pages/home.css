@@ -1,7 +1,7 @@
 .namebox {
     max-height: inherit;
     max-width: 200px;
-    width: 50%;
+    width: 50vw;
     box-sizing: border-box;
     animation: "fadeIn2 4s";
     text-align: left;
@@ -15,10 +15,10 @@
 
 .mainbox {
     z-index: 2;
-    width: 95%;
-    height: 80%;
-    margin-left: 2.5%;
-    margin-top: 100px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
     margin-bottom: 10%;
     display: flex;
     position: relative;

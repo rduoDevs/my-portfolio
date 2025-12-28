@@ -30,15 +30,15 @@ function Home() {
 
   return (
     <>
-
-<div style={{zIndex: 1, position: "absolute", top: "2.5vh", left: "50%", transform: "translateX(-50%)", width: "50%"}}>
+<section id="home">
+<div style={{zIndex: 1, position: "relative", margin: 'auto', width: "50%"}}>
             <Navbar
                 navItems={tabs}>
             </Navbar>
         </div>
 
     <div className = "mainbox">
-      <section id="home">
+      
         {/* Layout for the headline text */}
         <div className="namebox">
           <img src={ryanLogo} className='profile-pic'></img>
@@ -64,12 +64,13 @@ function Home() {
             <img style={{objectFit: 'contain', width: "25px", height: "25px"}} src={resume}></img>
           </button>
         </div>
-      </section>
+      
 
         <section id="about">
         <About />
         </section>
     </div>
+    </section>
       
       <div className="Experience" style={{marginTop: "15vh"}}>
       
