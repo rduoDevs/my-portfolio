@@ -36,15 +36,22 @@ function Experience() {
                     <div style={{ marginLeft: isMobile ? "0vw" : "3vw" }}>
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>work</h2>
                         <Placard
-                            header="Incoming Research Assistant"
+                            header="Incoming SWE Intern"
+                            img="roblox.jpg"
+                            description={["Roblox · San Mateo, CA", "Summer 2026"]}
+                            width={330}
+                            height={55}
+                        ></Placard>
+                        <Placard
+                            header="Research Assistant"
                             img="BVC2.jpg"
-                            description={["Brown IVL · Providence, RI", "December 2025 - Present"]}
+                            description={["Brown IVL · Providence, RI", "January 2026 - Present"]}
                             width={330}
                             height={55}
                         ></Placard>
                         
                         <Placard
-                            header="Software Engineer Intern"
+                            header="Software Engineering Intern"
                             img="HyAxiom.png"
                             description={["HyAxiom · East Hartford, CT", "June 2025 - August 2025"]}
                             width={330}

@@ -1,4 +1,4 @@
-import ryanLogo from '../assets/RyanPFP.png'
+import ryanLogo from '../assets/ryan.png'
 import github from '../assets/github.png'
 import mail from '../assets/mail.png'
 import linkedin from '../assets/linkedin.png'
@@ -41,7 +41,7 @@ function Home() {
       
         {/* Layout for the headline text */}
         <div className="namebox">
-          <img src={ryanLogo} className='profile-pic'></img>
+          <img src={ryanLogo} className='profile-pic' style={{borderRadius: '50%'}}></img>
        </div>
        <div className="textbox">
         <h1 className='homehead'>Ryan Duong</h1>

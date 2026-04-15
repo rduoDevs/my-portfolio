@@ -7,7 +7,7 @@ import dexterPerson from "../assets/DexterPerson.mp4";
 import cam1 from "../assets/CamSer2.mp4";
 import cam2 from "../assets/CamSer3.mp4";
 import cam3 from "../assets/CamSer1.mp4";
-import weensy from '../assets/WeensyOS.mp4';
+import weensy from '../assets/weens.mp4';
 import snake from '../assets/Snake.mp4';
 import ray1 from '../assets/raypp1.png';
 import ray2 from '../assets/raypp2.png';
