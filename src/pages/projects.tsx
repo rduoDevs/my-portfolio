@@ -20,7 +20,9 @@ import crystal2 from '../assets/crystal2.mp4';
 import crystal3 from '../assets/crystal3.png';
 import crystal4 from '../assets/crystal4.png';
 import crystal5 from '../assets/crystal5.png';
-
+import hm1 from '../assets/hailmary1.jpg';
+import hm2 from '../assets/HailMary3.jpg';
+import hm3 from '../assets/reportpic1.png';
 import { Output } from '../components/Output';
 
 function Projects() {
@@ -31,6 +33,23 @@ function Projects() {
            <div style={{animation: "fadeIn2 1s", zIndex: 0, marginLeft: 'auto', marginRight: 'auto', marginTop: "20vh", marginBottom: "5vh", position: "relative"}}>
                 <h1>projects</h1>
                 
+            </div>
+
+            <div  className='projectcard'>
+                <span style={{color: "black"}}>
+                <h2 style={{marginBottom: "-7px"}}>The Hail Mary Protocol</h2>
+                <i style={{fontSize: 14}}>Node.js · React · Pixi.js · Socket.io · Matplotlib · Cerebras · Llama 3.1</i>
+                <p>
+                    Space survival game that's also a <b>high-pressure simulation environment for LLM agents</b>, testing AI safety. Studied the psychology of the agent, got misalignment to tank success, & wrote it up in a 4-person report.
+                </p>
+                </span>
+                <div className='projectdetails'>
+                    <ProjectButton label='Read Report' url='https://github.com/rduoDevs/hail-mary-protocol/blob/master/report.pdf'/>
+                    <ProjectButton label='Code' url='https://github.com/rduoDevs/hail-mary-protocol'/>
+                    <ProjectButton label='Read Devpost' url='https://devpost.com/software/hail-mary-protocol?ref_content=user-portfolio&ref_feature=in_progress'/>
+                    
+                </div>
+           <Output imgs={[hm1,hm2,hm3]} vids={[]}></Output>
             </div>
 
             <div className='projectcard'>
@@ -45,7 +64,7 @@ function Projects() {
                 </p>
                 </span>
                 <div className='projectdetails'>
-                    <ProjectButton label='Read more' url='https://plume.hackmit.org/project/ugfun-gvyux-bbxmw-kdmvi'/>
+                    <ProjectButton label='Read More' url='https://plume.hackmit.org/project/ugfun-gvyux-bbxmw-kdmvi'/>
                     <ProjectButton label='Code' url='https://github.com/Timothy2105/dexter/'/>
                 </div>
                 <Output imgs={[]} vids={[dexterVid, dexterJuice, dexterPerson]}></Output>
@@ -57,7 +76,7 @@ function Projects() {
                 <h2 style={{marginBottom: "-7px"}}>CameraService</h2>
                 <i style={{fontSize: 14}}>Lua · Rojo</i>
                 <p>
-                    The most popular <b>open-sourced</b> library for customizable, smooth camera motion not natively supported in Roblox video games. Trusted by <b>800+ developers</b> across GitHub & Roblox Marketplace.
+                    The most popular <b>open-sourced</b> library for customizable, smooth camera motion not natively supported in Roblox video games. Trusted by <b>1000+ developers</b> across GitHub & Roblox Marketplace.
                 </p>
                 </span>
                 <div className='projectdetails'>
@@ -80,20 +99,6 @@ function Projects() {
                     <ProjectButton label='Code' url='https://github.com/JHeflinger/Crystals'/>
                 </div>
                 <Output imgs={[crystal5, crystal3, crystal4]} vids={[crystal2, crystal1]}></Output>
-            </div>
-
-        <div  className='projectcard'>
-                <span style={{color: "black"}}>
-                <h2 style={{marginBottom: "-7px"}}>BRIDGE</h2>
-                <i style={{fontSize: 14}}>Next.js · Python · Flask · REST API · Mistral</i>
-                <p>
-                    An <b>AI-powered</b>, patient-first medical scribe translating patient concerns into clinically-structured, LaTeX-formatted reports. The middleman to alleviate nerves, and <b>mitigate medical bias.</b>
-                </p>
-                </span>
-                <div className='projectdetails'>
-                    <ProjectButton label='Read more' url='https://devpost.com/software/better-real-interactions-for-diagnosis-general-evaluation'/>
-                    <ProjectButton label='Code' url='https://github.com/ypragyan/bridge'/>
-                </div>
             </div>
 
             <div  className='projectcard'>

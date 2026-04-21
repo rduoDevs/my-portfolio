@@ -51,7 +51,7 @@ function Experience() {
                         ></Placard>
                         
                         <Placard
-                            header="Software Engineering Intern"
+                            header="Software Engineer Intern"
                             img="HyAxiom.png"
                             description={["HyAxiom · East Hartford, CT", "June 2025 - August 2025"]}
                             width={330}
@@ -67,13 +67,7 @@ function Experience() {
                             height={55}
                         ></Placard>
 
-                        <Placard
-                            header="Indie Game Developer"
-                            img="Lugical.png"
-                            description={["Alias: Lugical · Remote", "August 2017 - Present"]}
-                            width={330}
-                            height={55}
-                        ></Placard>
+                        
                     </div>
                     <div style={{ marginLeft: isMobile ? "0vw" : "0vw" }}>
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh"  }}>extracurriculars</h2>
@@ -92,9 +86,9 @@ function Experience() {
                             height={55}
                         ></Placard>
                         <Placard
-                            header="Community Feedback Program"
-                            img="roblox.png"
-                            description={["Roblox Developer Relations"]}
+                            header="Indie Game Developer"
+                            img="Lugical.png"
+                            description={["60M+ plays & counting."]}
                             width={330}
                             height={55}
                         ></Placard>

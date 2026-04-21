@@ -51,9 +51,9 @@ function Home() {
           <button className='contact' onClick={() => window.open('https://github.com/rduoDevs/')}>
             <img style={{width: "25px", height: "25px"}} src={github}></img>
           </button>
-          <button className='contact' onClick={() => window.open('mailto:rduong314@gmail.com')}>
+          <a className='contact' href="mailto:rduong314@gmail.com" style={{display: "inline-block"}}>
             <img style={{width: "25px", height: "25px"}} src={mail}></img>
-          </button>
+          </a>
           <button className='contact' onClick={() => window.open('https://www.linkedin.com/in/ryanduongct')}>
             <img style={{width: "25px", height: "25px"}} src={linkedin}></img>
           </button>

@@ -15,8 +15,8 @@
 
 
 .mainbox {
-    width: 90vw;
-    max-width: 1300px; /* or 1000px / 1100px */
+    width: min(90vw, 100%);
+    max-width: 1300px;
     margin: 35px auto 10%;
     display: flex;
     flex-direction: column;
