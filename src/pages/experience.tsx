@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import '../App.css';
 import { Placard } from '../components/Placard';
+import robloxImg from '../assets/roblox.jpg';
+import bvc2Img from '../assets/BVC2.jpg';
+import hyaxiomImg from '../assets/HyAxiom.png';
+import icodeImg from '../assets/iCode.png';
+import busunImg from '../assets/busun.png';
+import bseImg from '../assets/BSE.png';
+import lugicalImg from '../assets/Lugical.png';
+import comparchImg from '../assets/comparch.png';
+import dsaImg from '../assets/dsa.png';
 
 function Experience() {
     
@@ -36,32 +45,32 @@ function Experience() {
                     <div style={{ marginLeft: isMobile ? "0vw" : "3vw" }}>
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>work</h2>
                         <Placard
-                            header="Incoming SWE Intern"
-                            img="roblox.jpg"
+                            header="Software Engineer Intern"
+                            img={robloxImg}
                             description={["Roblox · San Mateo, CA", "Summer 2026"]}
                             width={330}
                             height={55}
                         ></Placard>
                         <Placard
                             header="Research Assistant"
-                            img="BVC2.jpg"
+                            img={bvc2Img}
                             description={["Brown IVL · Providence, RI", "January 2026 - Present"]}
                             width={330}
                             height={55}
                         ></Placard>
-                        
+
                         <Placard
                             header="Software Engineer Intern"
-                            img="HyAxiom.png"
-                            description={["HyAxiom · East Hartford, CT", "June 2025 - August 2025"]}
+                            img={hyaxiomImg}
+                            description={["HyAxiom · East Hartford, CT", "Summer 2025"]}
                             width={330}
                             height={55}
                         ></Placard>
 
-                        
+
                         <Placard
                             header="Technical Instructor"
-                            img="iCode.png"
+                            img={icodeImg}
                             description={["iCode · Manchester, CT", "August 2023 - June 2024"]}
                             width={330}
                             height={55}
@@ -73,21 +82,21 @@ function Experience() {
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh"  }}>extracurriculars</h2>
                         <Placard
                             header="Secretary-General"
-                            img="busun.png"
+                            img={busunImg}
                             description={["Brown Model United Nations"]}
                             width={330}
                             height={55}
                         ></Placard>
                         <Placard
                             header="Attitude Control Engineer"
-                            img="BSE.png"
+                            img={bseImg}
                             description={["Brown Space Engineering"]}
                             width={330}
                             height={55}
                         ></Placard>
                         <Placard
                             header="Indie Game Developer"
-                            img="Lugical.png"
+                            img={lugicalImg}
                             description={["60M+ plays & counting."]}
                             width={330}
                             height={55}
@@ -96,14 +105,14 @@ function Experience() {
                         <h2 style={{ display: "flex", alignItems: "left", marginLeft: ".5vw", marginBottom: "0vh" }}>teaching</h2>
                         <Placard
                             header="Computer Architecture"
-                            img="comparch.png"
+                            img={comparchImg}
                             description={["CSCI1952Y: UTA", "Spring 2026 @ Brown"]}
                             width={330}
                             height={55}
                         ></Placard>
                         <Placard
                             header="Accelerated Intro to CS"
-                            img="dsa.png"
+                            img={dsaImg}
                             description={["CSCI0190: UTA-STA", "Fall 2025 @ Brown"]}
                             width={330}
                             height={55}

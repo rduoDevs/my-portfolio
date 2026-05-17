@@ -24,7 +24,7 @@ import hm1 from '../assets/hailmary1.jpg';
 import hm2 from '../assets/HailMary3.jpg';
 import hm3 from '../assets/reportpic1.png';
 import { Output } from '../components/Output';
-
+import report from '../assets/report.pdf'
 function Projects() {
     return (
         <>
@@ -44,7 +44,7 @@ function Projects() {
                 </p>
                 </span>
                 <div className='projectdetails'>
-                    <ProjectButton label='Read Report' url='src/assets/report.pdf'/>
+                    <ProjectButton label='Read Report' url={report}/>
                     <ProjectButton label='Code' url='https://github.com/rduoDevs/hail-mary-protocol'/>
                     <ProjectButton label='Read Devpost' url='https://devpost.com/software/hail-mary-protocol?ref_content=user-portfolio&ref_feature=in_progress'/>
                     
@@ -76,7 +76,7 @@ function Projects() {
                 <h2 style={{marginBottom: "-7px"}}>CameraService</h2>
                 <i style={{fontSize: 14}}>Lua · Rojo</i>
                 <p>
-                    The most popular <b>open-sourced</b> library for customizable, smooth camera motion not natively supported ipushn Roblox video games. Trusted by <b>1000+ developers</b> across GitHub & Roblox Marketplace.
+                    The most popular <b>open-sourced</b> library for customizable, smooth camera motion not natively supported in Roblox video games. Trusted by <b>1000+ developers</b> across GitHub & Roblox Marketplace.
                 </p>
                 </span>
                 <div className='projectdetails'>
